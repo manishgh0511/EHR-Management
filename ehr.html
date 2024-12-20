@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHR Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Blockchain-Based EHR Management</h1>
+    </header>
+    <main>
+        <section id="authorize-doctor">
+            <h2>Authorize Doctor</h2>
+            <form id="authorizeForm">
+                <label for="patientId">Patient ID:</label>
+                <input type="text" id="patientId" required>
+                <label for="doctorId">Doctor ID:</label>
+                <input type="text" id="doctorId" required>
+                <button type="submit">Authorize</button>
+            </form>
+        </section>
+        <section id="update-record">
+            <h2>Update Medical Record</h2>
+            <form id="updateForm">
+                <label for="recordId">Record ID:</label>
+                <input type="text" id="recordId" required>
+                <label for="patientIdUpdate">Patient ID:</label>
+                <input type="text" id="patientIdUpdate" required>
+                <label for="doctorIdUpdate">Doctor ID:</label>
+                <input type="text" id="doctorIdUpdate" required>
+                <textarea id="description" placeholder="Description"></textarea>
+                <button type="submit">Update</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Powered by Blockchain Technology</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
